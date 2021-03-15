@@ -1,4 +1,4 @@
-﻿#IfWinActive Warcraft III
+#IfWinActive Warcraft III
 #SingleInstance force
 #HotkeyInterval 0
 #InstallKeybdHook
@@ -7,6 +7,7 @@
 SetBatchLines, -1		
 SetKeyDelay , -1, 0		
 Process, Priority, AutoHotkey.exe, High
+lobby := 1
 F12::
 
 WinGet, WindowID, ID, A
@@ -37,9 +38,8 @@ vk0xC0::
 {
 	PixelGetColor, t, 0, 0, rgb
 	Clipboard = %t%
-Return
 }
-
+Return
 a:: 
 if lobby != 1
 	{
@@ -50,9 +50,8 @@ if lobby != 1
 Else
 	{
 		SendInput, {%A_ThisHotkey%}
-		Return
 	}
-	
+Return
 q:: 
 if lobby != 1
 	{
@@ -63,8 +62,8 @@ if lobby != 1
 Else
 	{
 		SendInput, {%A_ThisHotkey%}
-		Return
 	}	
+Return
 w::
 if lobby != 1
 	{
@@ -75,9 +74,8 @@ if lobby != 1
 Else
 	{
 		SendInput, {%A_ThisHotkey%}
-		Return
 	}
-
+Return
 e::
 if lobby != 1
 	{
@@ -88,9 +86,8 @@ if lobby != 1
 Else
 	{
 		SendInput, {%A_ThisHotkey%}
-		Return
 	}
-
+Return
 r::
 if lobby != 1
 	{
@@ -101,9 +98,8 @@ if lobby != 1
 Else
 	{
 		SendInput, %A_ThisHotkey%
-		Return
 	}
-
+Return
 d::
 if lobby != 1
 	{
@@ -114,9 +110,8 @@ if lobby != 1
 Else
 	{
 		SendInput, {%A_ThisHotkey%}
-		Return
 	}
-
+return
 f::
 if lobby != 1
 	{
@@ -127,9 +122,8 @@ if lobby != 1
 Else
 	{
 		SendInput, {%A_ThisHotkey%}
-		Return
 	}
-
+Return
 t::
 if lobby != 1
 	{
@@ -140,9 +134,8 @@ if lobby != 1
 Else
 	{
 		SendInput, {%A_ThisHotkey%}
-		Return
 	}
-
+Return
 g::
 if lobby != 1
 	{
@@ -153,5 +146,5 @@ if lobby != 1
 Else
 	{
 		SendInput, {%A_ThisHotkey%}
-		Return
 	}
+Return
