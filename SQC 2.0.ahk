@@ -64,6 +64,11 @@ Suspend, Permit
 	}
 Return
 ;;;;; Скиллы/Инвентарь ;;;;;
+XButton1:: F1
+Return
+XButton2:: F2
+Return
+
 vk0xC0::
 	{
 	PixelGetColor, t, 0, 0, rgb
@@ -71,111 +76,15 @@ vk0xC0::
 	}
 Return
 
-a:: 
-if lobby != 1
-	{
-		SendInput, {%A_ThisHotkey%}{Lbutton down}
-		SendInput, !g{esc}
-		SendInput, {Lbutton up}
-	}
-	Else
-	{
-		SendInput, {%A_ThisHotkey%}
-	}
-Return
-
-q:: 
-if lobby != 1
-	{
-		SendInput, {q}{Lbutton down}
-		SendInput, !g{esc}
-		SendInput, {Lbutton up}
-	}
-	Else
-	{
-		SendInput, {%A_ThisHotkey%}n
-	}	
-Return
-
+a::
+q::
 w::
-if lobby != 1
-	{
-		SendInput, {%A_ThisHotkey%}{Lbutton down}
-		SendInput, !g{esc}
-		SendInput, {Lbutton up}
-	}
-	Else
-	{
-		SendInput, {%A_ThisHotkey%}
-	}
-Return
-
 e::
-if lobby != 1
-	{
-		SendInput,{%A_ThisHotkey%}{Lbutton down}
-		SendInput, !g{esc}
-		SendInput, {Lbutton up}
-	}
-	Else
-	{
-		SendInput, {%A_ThisHotkey%}
-	}
-Return
-
 r::
-if lobby != 1
-	{
-		SendInput, {%A_ThisHotkey%}{Lbutton down}
-		SendInput, !g{esc}
-		SendInput, {Lbutton up}
-	}
-	Else
-	{
-		SendInput, %A_ThisHotkey%
-	}
-Return
-
 d::
-if lobby != 1
-	{
-		SendInput, {%A_ThisHotkey%}{Lbutton down}
-		SendInput, !g{esc}
-		SendInput, {Lbutton up}
-	}
-	Else
-	{
-		SendInput, {%A_ThisHotkey%}
-	}
-Return
-
-f::
-if lobby != 1
-	{
-		SendInput, {%A_ThisHotkey%}{Lbutton down}
-		SendInput, !g{esc}
-		SendInput, {Lbutton up}
-	}
-	Else
-	{
-		SendInput, {%A_ThisHotkey%}
-	}
-Return
-
 t::
-if lobby != 1
-	{
-		SendInput, {%A_ThisHotkey%}{Lbutton down}
-		SendInput, !g{esc}
-		SendInput, {Lbutton up}
-	}
-	Else
-	{
-		SendInput, {%A_ThisHotkey%}
-	}
-Return
-
-g::
+f::
+g:: 
 if lobby != 1
 	{
 		SendInput, {%A_ThisHotkey%}{Lbutton down}
