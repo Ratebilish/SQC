@@ -22,8 +22,8 @@ Save:
   Gui, Submit, NoHide
   Loop, 6
   {
-	    Hotkey, % PrKey%A_Index%, off, UseErrorLevel
-		Hotkey, % PrKey%A_Index% := Key1, Key1, on, UseErrorLevel
+		Hotkey, % PrKey%A_Index%, off, UseErrorLevel
+		Hotkey, % PrKey%A_Index% := Key%A_Index%, Key%A_Index%, on, UseErrorLevel
 		IniWrite, % Key%A_Index%, IniFile.ini, Section, Key%A_Index%
   }
 Return
