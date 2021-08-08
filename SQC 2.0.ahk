@@ -64,11 +64,6 @@ Suspend, Permit
 	}
 Return
 ;;;;; Скиллы/Инвентарь ;;;;;
-XButton1:: F1
-Return
-XButton2:: F2
-Return
-
 vk0xC0::
 	{
 	PixelGetColor, t, 0, 0, rgb
